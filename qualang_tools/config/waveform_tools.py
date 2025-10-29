@@ -18,7 +18,7 @@ def drag_gaussian_pulse_waveforms(
     :param int length: The pulse length in ns.
     :param float sigma: The gaussian standard deviation.
     :param float alpha: The DRAG coefficient.
-    :param float anharmonicity: f_21 - f_10 - The differences in energy between the 2-1 and the 1-0 energy levels, in Hz.
+    :param float anharmonicity: f_21 - f_10 - The differences in energy between the 2-1 and the 1-0 energy levels, in Hz. (This should be changed to f_10 - f_21 for DRAG coefficient to work)
     :param float detuning: The frequency shift to correct for AC stark shift, in Hz.
     :param bool subtracted: If true, returns a subtracted Gaussian, such that the first and last points will be at 0
         volts. This reduces high-frequency components due to the initial and final points offset. Default is true.
